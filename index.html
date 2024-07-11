@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishan Mohan's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000000; /* Black */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Default font */
+        }
+
+        .container {
+            text-align: center;
+            color: white;
+            max-width: 800px;
+            width: 90%;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3em; /* Larger font size */
+            margin: 0;
+            color: #8B0000; /* Dark red */
+            overflow: hidden; /* Ensures the content is hidden until animated */
+            white-space: nowrap; /* Keeps the text on a single line */
+            animation: typing-name 4s steps(30, end) forwards;
+        }
+
+        @keyframes typing-name {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        .title {
+            font-size: 1.5em; /* Larger font size */
+            margin: 0;
+            color: #FFD700; /* Dark yellow */
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing-title 8s steps(30, end) 4s infinite;
+        }
+
+        @keyframes typing-title {
+            0%, 25% { width: 0 }
+            50%, 100% { width: 100% }
+        }
+
+        .icons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .icons a {
+            color: #FFFFFF; /* White icon color */
+            font-size: 0.8em; /* Smaller icon size */
+            margin: 0 8px; /* Reduced margin */
+            transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s; /* Added color transition */
+            padding: 10px; /* Reduced padding */
+            border-radius: 50%;
+            background-color: #8B0000; /* Dark red */
+            box-shadow: 0 0 8px rgba(255, 255, 255, 0.5); /* Subtle glow effect */
+            animation: icon-pulse 2s infinite alternate; /* Animation for pulsing effect */
+        }
+
+        .icons a:hover {
+            transform: scale(1.1); /* Slightly larger on hover */
+            box-shadow: 0 0 12px rgba(255, 255, 255, 0.8); /* Increased glow on hover */
+            background-color: #DC143C; 
+            color: #1E90FF; /* Blue icon color on hover */
+        }
+
+        @keyframes icon-pulse {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+
+        /* Media Query for Tablets and Phones */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em; /* Adjust font size for smaller screens */
+            }
+            .title {
+                font-size: 1.2em; /* Adjust font size for smaller screens */
+            }
+            .icons a {
+                font-size: 0.6em; /* Further reduce icon size for smaller screens */
+                padding: 8px; /* Adjust padding for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Krishan Mohan</h1>
+        <p class="title">Java Developer and MERN Enthusiast</p>
+        <div class="icons">
+            <a href="https://github.com/krishanmohan1" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/krishan-mohan-sde/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://x.com/Krishan17115155" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:krishanmohan3501@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+</body>
+</html>
